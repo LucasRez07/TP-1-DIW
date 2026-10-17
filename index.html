@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parques do Brasil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-verde sticky-top">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">🌿 Parques<span>BR</span></a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+          <li class="nav-item"><a class="nav-link" href="#todos">Todos os parques</a></li>
+          <li class="nav-item"><a class="nav-link" href="#autor">Sobre o autor</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <section id="destaques" class="mb-5">
+      <h2 class="secao">Parques em Destaque</h2>
+      <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators" id="indicadores"></div>
+        <div class="carousel-inner" id="slides"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Anterior</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Próximo</span></button>
+      </div>
+    </section>
+
+    <section id="todos" class="mb-5">
+      <h2 class="secao">Todos os Parques</h2>
+      <div class="row g-4" id="cards"></div>
+    </section>
+
+    <section id="autor" class="mb-4">
+      <h2 class="secao">Sobre o Autor</h2>
+      <div class="card p-3 border-0 shadow-sm">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-md-3 text-center"><img id="autorFoto" class="rounded-circle img-fluid autor-foto" alt="Foto do autor"></div>
+          <div class="col-12 col-md-9" id="autorInfo"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-verde text-white text-center py-3"><small>Trabalho Prático 1 · Desenvolvimento Web</small></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

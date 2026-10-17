@@ -28,7 +28,6 @@ main{flex:1}
 
 @media(max-width:576px){
   .carousel-item img{height:260px}
-  .carousel-caption{position:static;background:var(--verde);color:#fff;padding:.8rem;margin-top:.4rem}
-  .carousel-caption p{font-size:.85rem}
+.carousel-caption{position:static;background:var(--verde);color:#fff;padding:.8rem .8rem 2.6rem;margin-top:.4rem}  .carousel-caption p{font-size:.85rem}
   .galeria figure{flex-basis:80%}
 }
